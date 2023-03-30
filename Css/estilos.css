@@ -1,3 +1,15 @@
-.color_fondo{
-    background:  #F9CB9C;
+body{
+    background-color:#F9CB9C;
+}
+
+.tam_img{
+    width: 100%;
+    max-width: 500px;
+    
+}
+    
+.titulos{
+    font-size: 65px;
+    text-align: center;
+    text-size-adjust: 65px;
 }
