@@ -9,7 +9,17 @@ body{
 }
     
 .titulos{
-    font-size: 65px;
+    font-size: 55px;
     text-align: center;
-    text-size-adjust: 65px;
+    
+}
+.tam_logo_mini{
+    width: 100%;
+    max-width: 350px;
+    
+}
+.letra_form{
+    font-size: 24px;
+    text-align: center;
+    font-style: oblique;
 }
