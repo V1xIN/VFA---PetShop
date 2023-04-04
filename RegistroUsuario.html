@@ -13,51 +13,53 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: 30px;">
             <div class="col-12 , titulos">
                 <p>Registro Nuevo Usuario</p>
             </div>
         </div>
         <div class="row , letra_form">
-            <div class="col-12">
-                <p>Rut:</p>
+            <div class="col"></div>
+            <div class="col">
+                <form action="#" method="POST" enctype="multipart/form-data" name="form1">
+                <div class="form-group">
+                <label class="form-label">Nombre: </label>
+                <input class="form-control" type="text" name="nombre" required value="Victor">
+                </div>
+                <div class="form-group">
+                <label class="form-label">Contraseña: </label>
+                <input class="form-control" maxlength="8" type="password" name="clave" placeholder="Victor">
+                </div>
+                <div class="form-group">
+                <label class="form-label">Fecha de Nacimiento: </label>
+                <input class="form-control" type="date" name="f_nac">
+                </div>
+                <div class="form-group">
+                <label>Edad: </label>
+                <input type="number" name="edad" min="1">
+                </div>
+                <div class="form-group">
+                <label>Fotografía: </label>
+                <input type="file" name="foto">
+                </div>
+                <div class="form-group">
+                <label>Género: </label>
+                <select name="genero">
+                    <option value="S">Seleccione una opción</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="O" selected>Otro</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar">
+                <input type="button" value="Volver">
+                </div>
+            </form>
             </div>
-            <div class="col-12">
-                <p>Nombre:</p>
-            </div>
-            <div class="col-12">
-                <p>Apellido:</p>
-            </div>
-            <div class="col-12">
-                <p>Correo Electronico:</p>
-            </div>
-            <div class="col-12">
-                <p>tif:</p>
-            </div>
-            <div class="col-12">
-                <p>Clave:</p>
-            </div>
-            <div class="col-12">
-                <p>Rol:</p>
-            </div>
-            <div class="col-12">
-                <p>Pregunta de recuperacion:</p>
-            </div>
-            <div class="col-12">
-                <p>Respuesta Pregunta:</p>
-            </div>
-            <div class="col-md-6">
-                <p>Registrar Cliente</p>
-            </div>
-            <div class="col-md-6">
-                <p>Volver</p>
-            </div>
-
-            <div class="row" style="text-align: right;">
-                <div class="col-md-12"></div>
-                <img class="tam_logo_mini" src="img/logofinal.png" alt="no img">
-
-            </div>
+            <div class="col"></div>
+            
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
