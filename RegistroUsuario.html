@@ -21,44 +21,67 @@
         <div class="row , letra_form">
             <div class="col"></div>
             <div class="col">
-                <form action="#" method="POST" enctype="multipart/form-data" name="form1">
+                
+                <form action="#" method="POST" enctype="multipart/form-data" name="formRegistro" >
+                
+                <div class="form-group">
+                <label class="form-label">Rut: </label>
+                <input class="form-control" type="text" name="Rut" required >
+                </div>
                 <div class="form-group">
                 <label class="form-label">Nombre: </label>
-                <input class="form-control" type="text" name="nombre" required value="Victor">
+                <input class="form-control" maxlength="8" type="text" name="Nombre" >
+                </div>
+                <div class="form-group">
+                <label class="form-label">Apellido: </label>
+                <input class="form-control" type="text" name="Apellido">
+                </div>
+                <div class="form-group">
+                <label class="form-label">Correo Electronico: </label>
+                <input class="form-control" type="text" name="Correo" required>
+                </div>
+                <div class="form-group">
+                <label class="form-label">Telefono:</label>
+                <input class="form-control" type="number" name="Fono">
                 </div>
                 <div class="form-group">
                 <label class="form-label">Contraseña: </label>
-                <input class="form-control" maxlength="8" type="password" name="clave" placeholder="Victor">
+                <input class="form-control" type="password" name="clave" required>
                 </div>
                 <div class="form-group">
-                <label class="form-label">Fecha de Nacimiento: </label>
-                <input class="form-control" type="date" name="f_nac">
+                    <label class="form-label">Contraseña: </label>
+                    <input class="form-control" type="password" name="clave" required>
                 </div>
                 <div class="form-group">
-                <label>Edad: </label>
-                <input type="number" name="edad" min="1">
+                    <select name="id_rol" >
+                        <option value="S">Seleccione un Rol</option>
+                        <option value="1">Cliente</option>
+                        <option value="2">Empleado</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="id_pregunta" >
+                        <option value="S">Seleccione una pregunta de recuperacion(clave)</option>
+                        <option value="1">¿Nombre de tu primera mascota</option>
+                        <option value="2">¿Fecha de nacimiento de tu Mamá?</option>
+                        <option value="3">¿Nombre de la cuidad de nacimiento?</option>
+                        <option value="4">¿Nombre de tu hijo preferido?</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                <label>Fotografía: </label>
-                <input type="file" name="foto">
+                    <label class="form-label">Respuesta: </label>
+                    <input class="form-control" type="text" name="Respuesta" required>
                 </div>
                 <div class="form-group">
-                <label>Género: </label>
-                <select name="genero">
-                    <option value="S">Seleccione una opción</option>
-                    <option value="M">Masculino</option>
-                    <option value="F">Femenino</option>
-                    <option value="O" selected>Otro</option>
-                </select>
+                <input type="submit" value="Registrar" class="btn btn-danger">
+                <input type="reset" value="Limpiar" class="btn btn-danger">
+                <input type="button" value="Volver" class="btn btn-danger">
                 </div>
-                <div class="form-group">
-                <input type="submit" value="Registrar">
-                <input type="reset" value="Limpiar">
-                <input type="button" value="Volver">
+                <div>
+                    <img class="tam_logo_mini" src="img/logofinal.png" alt="Sin imagen">
                 </div>
+                
             </form>
-            </div>
-            <div class="col"></div>
             
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
