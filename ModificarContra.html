@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: 30px;">
             <div class="col-md-12">
                 <ul class="nav">
                     <li class="nav-item">
@@ -48,75 +48,55 @@
                 </ul>
             </div>
             <div class="col-12  titulos">
-                <p>Tu Carrito</p>
+                <p>Modificar Contraseña</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 " style="text-align: center;">
-                <table class="table ">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">cod_producto</th>
-                            <th scope="col">nombre</th>
-                            <th scope="col">cantidad</th>
-                            <th scope="col">subtotal</th>
-                            <th scope="col">total</th>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="row  letra_form">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+        
+                        <form action="#" method="POST" enctype="multipart/form-data" name="formMod_Contra">
+        
                             
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>001</td>
-                            <td>Hueso_juguete</td>
-                            <td>3</td>
-                            <td>$4500</td>
-                            <td>$5000</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
-                <br><br>
-                <input type="submit" value="Pagar" class="btn btn-danger">
-                <input type="submit" value="Editar" class="btn btn-danger">
-                <input type="reset" value="Eliminar" class="btn btn-danger">
-                <div>
-                    <img class="tam_logo_mini" src="img/logofinal.png" alt="Sin imagen">
-                </div>
-            </div> 
+                            <div class="form-group">
+                                <label class="form-label">Nombre Usuario: </label>
+                                <input class="form-control" maxlength="8" type="text" name="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Contraseña actual: </label>
+                                <input class="form-control" type="password" name="clave" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Contraseña nueva: </label>
+                                <input class="form-control" type="password" name="new_clave" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Repetir Contraseña: </label>
+                                <input class="form-control" type="password" name="new_clave" required>
+                            </div>
+                           
+                            <div class="form-group">
+                                <input type="submit" value="Cambiar Contraseña" class="btn btn-danger">
+                                <input type="reset" value="Limpiar" class="btn btn-danger">
+                                
+                            </div>
+                            <div>
+                                <img class="tam_logo_mini" src="img/logofinal.png" alt="Sin imagen">
+                            </div>
+        
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+        
+                    </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
+
 
 
 
