@@ -27,3 +27,8 @@ body{
     width: 100%;
     max-width: 100px;
 }
+
+.buttom{
+    background-color: rgb(35, 133, 247);
+    color: white;
+}
