@@ -77,60 +77,59 @@
                 <p>Registro Nuevo Usuario</p>
             </div>
         </div>
-        <div class="row  letra_form">
+        <div class="row  ">
             <div class="col-md-3"></div>
             <div class="col-md-6">
 
-                <form action="#" method="POST" enctype="multipart/form-data" name="formRegistro">
+                <form action="#" method="POST" enctype="multipart/form-data" name="" id="formRegistro">
 
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Rut: </label>
-                        <input class="form-control" type="text" name="Rut" required>
+                        <input class="form-control" type="text" name="" id="rut" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Nombre: </label>
-                        <input class="form-control" maxlength="8" type="text" name="Nombre">
+                        <input class="form-control"  type="text" name="" id="nameU" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Apellido: </label>
-                        <input class="form-control" type="text" name="Apellido">
+                        <input class="form-control" type="text" name="" id="Apellido" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Correo Electronico: </label>
-                        <input class="form-control" type="text" name="Correo" required>
+                        <input class="form-control" type="text" name="" id="correo" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Telefono:</label>
-                        <input class="form-control" type="number" name="Fono">
+                        <input class="form-control" type="number" name="" id="fono">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Contraseña: </label>
-                        <input class="form-control" type="password" name="clave" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Contraseña: </label>
-                        <input class="form-control" type="password" name="clave" required>
+                        <input class="form-control" type="password" name="" id="clave" required>
                     </div>
                     <div>
+                        <label class="form-label letra_form">Pregunta de recuperacion: </label>
                         <select name="id_pregunta">
                             <option value="S">Seleccione una pregunta de recuperacion(clave)</option>
                             <option value="1">¿Nombre de tu primera mascota</option>
-                            <option value="2">¿Fecha de nacimiento de tu Mamá?</option>
                             <option value="3">¿Nombre de la cuidad de nacimiento?</option>
                             <option value="4">¿Nombre de tu hijo preferido?</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group letra_form">
                         <label class="form-label">Respuesta: </label>
-                        <input class="form-control" type="text" name="Respuesta" required>
+                        <input class="form-control" type="text" name="" id="Respuesta" required>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" value="Registrar" class="btn btn-danger">
-                        <input type="reset" value="Limpiar" class="btn btn-danger">
+                    <div class="form-group letra_form">
+                        <input type="submit" value="Registrar" class="btn buttom">
+                        <input type="reset" value="Limpiar" class="btn buttom">
                         
                     </div>
                     <div>
+                        <p class="warnings" id="warnings"></p>
+                        <center>
                         <img class="tam_logo_mini" src="img/logofinal.png" alt="Sin imagen">
+                        </center>
                     </div>
 
                 </form>
@@ -149,6 +148,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
+        <script src="js/Registro.js"></script> 
 </body>
 
 </html>

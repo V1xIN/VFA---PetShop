@@ -1,17 +1,13 @@
 $(document).ready(function(){
-    $("#formP").submit(function(p){
-        p.preventDefault();
+    $("#formRe").submit(function(r){
+        r.preventDefault();
         var Nusuario = $("#nameU").val().trim();
-        var clave = $("#clave").val().trim();
+        var Respuesta = $("#Respuesta").val().trim();
 
         let msjMostrar = "";
         let enviar = false;
         let letras = /^[a-zA-Z]+$/;
-        let valClave= /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
-
-
-        
-         if(Nusuario.length < 4 || Nusuario.length > 12){
+        if(Nusuario.length < 4 || Nusuario.length > 12){
             msjMostrar = msjMostrar + "El Usuario debe tener entre 4 y 12 caracteres<br>";
             enviar = true;
         } 
@@ -25,50 +21,30 @@ $(document).ready(function(){
             enviar = true;
         }
         
-        
-        
-        if(!valClave.test(clave)){
-            msjMostrar = msjMostrar + "La Contraseña debe tener al menos un número o carácter especial y al menos una letra minúscula<br>";
-            enviar = true;
-
-        }
-        
-
-       
-        if( clave.length < 8 || clave.length > 12){
-            msjMostrar = msjMostrar + "La Contraseña debe tener entre 8 y 12 caracteres<br>";
-            enviar = true;
-        } 
-        
-
-        if(Nusuario == clave){
-            msjMostrar += "El  nombre de usuario no puede ser igual a la contraseña<br>";
+        if(Respuesta.length < 6 || Nusuario.length > 15){
+            msjMostrar = msjMostrar + "La Respuesta debe tener entre 6 y 15 caracteres<br>";
             enviar = true;
         }
-        
+        if(!letras.test(Respuesta)){
+            msjMostrar = msjMostrar + "La Respuesta solo debe contener letras<br>";
+            enviar = true;
+        }
+
+
+
+
+
+
         if(enviar){
             $("#warnings").html(msjMostrar);
         }
         else{
-            $("#warnings").html("Sesion correcta");
+            $("#warnings").html("Datos Correctos!!");
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+
+
+
     });
     function esMayuscula(letra){
         if(letra == letra.toUpperCase()){
@@ -82,4 +58,15 @@ $(document).ready(function(){
 
     }
 
+
+
+
+
+
+
+
 });
+
+
+
+
